@@ -15,9 +15,10 @@ before_install:
     - popd
 
     - git clone https://github.com/cvra/packager ../packager
+    - git reset --hard d1524741015c4f0a780435ffab7a9c994373bf81
 
 before_script:
-    - ../cvra_packager/packager.py
+    - ../packager/packager.py
     - mkdir build/
     - cd build/
     - cmake ..
