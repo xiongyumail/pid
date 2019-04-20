@@ -15,7 +15,10 @@ before_install:
     - popd
 
     - git clone https://github.com/cvra/packager ../packager
-    - git reset --hard d1524741015c4f0a780435ffab7a9c994373bf81
+    - pushd .
+    - cd ../packager
+    - git checkout d15247
+    - popd
 
 before_script:
     - ../packager/packager.py
