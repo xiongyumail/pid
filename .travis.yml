@@ -17,7 +17,7 @@ before_install:
     - git clone https://github.com/cvra/packager ../packager
 
 before_script:
-    - ../packager/packager.py
+    - ../cvra_packager/packager.py
     - mkdir build/
     - cd build/
     - cmake ..
